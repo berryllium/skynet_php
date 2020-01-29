@@ -1,0 +1,236 @@
+h1 {
+  padding: 0;
+  margin : 0;
+}
+
+body {
+  font-size: 1.1em;
+  padding    : 0;
+  margin     : 0;
+  font-family: sans-serif;
+  background : #efeff4;
+}
+
+div {
+  box-sizing: border-box;
+}
+button {
+  font-size: 1.2em;
+}
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.99);
+}
+
+/* Стили страницы */
+
+.page__header {
+  background-color: #fff;
+  position        : relative;
+  text-align      : center;
+  padding         : 10px 0;
+  font-weight     : 700;
+  border-bottom   : 1px solid #e9e8ea;
+  margin-bottom   : 20px;
+}
+
+.page__title {
+  font-size: 1.1em;
+  color    : #8bc63c;
+}
+
+.page__title {
+  font-size: 1.2em;
+  color    : black;
+}
+
+.page__arrow {
+  padding-bottom    : 5px;
+  display    : flex;
+  align-items: center;
+  position   : absolute;
+  font-size  : 2em;
+  color      : #8bc63c;
+  left       : 20px;
+  top        : 0;
+  bottom     : 0;
+  content    : '&copy;'
+}
+
+.page__arrow:hover {
+  cursor: pointer;
+}
+
+/* Карточки тарифов */
+
+.card-wrapper {
+  display : grid;
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing      : border-box;
+  background-color: #fff;
+  width           : 100%;
+  padding         : 0 20px;
+}
+
+.card__header {
+  color        : #8bc63c;
+  padding      : 10px 0;
+  font-weight  : 700;
+  border-bottom: 1px solid #e9e8ea;
+}
+
+.card__param {
+  flex: 1;
+  text-decoration: none;
+  display        : block;
+  position       : relative;
+  padding        : 10px 0;
+}
+
+.card__param:hover {
+  cursor: pointer;
+}
+
+.card__arrow {
+  display    : flex;
+  align-items: center;
+  position   : absolute;
+  font-size  : 2em;
+  color      : #d4d4d8;
+  right      : 0px;
+  top        : 0;
+  bottom     : 0;
+  content    : '&copy;'
+}
+
+.card__speed {
+  display      : inline-block;
+  padding      : 5px 20px;
+  margin-left  : -20px;
+  margin-bottom: 10px;
+  color        : white;
+}
+
+.card__speed_earth {
+  background-color: #70603e;
+}
+
+.card__speed_water {
+  background-color: #0074d9;
+}
+
+.card__speed_fire {
+  background-color: #e74806;
+}
+
+.card__period {
+  color      : #555;
+  font-weight: 600;
+}
+
+.card__price {
+  color      : #555;
+  font-weight: 600;
+}
+
+.card__options {
+  margin-top: 15px;
+}
+
+.card__option {
+  color      : #555;
+  margin: 0;
+  font-size : 0.9em;
+}
+
+.card__payment {
+  margin-top: 10px;
+  font-size : 0.9em;
+}
+
+.card__discount {
+  font-size: 0.9em;
+}
+
+.card__repayment {
+  font-size: 0.9em;
+}
+
+.card__start {
+  margin-top: 20px;
+  font-size : 0.9em;
+  color     : #bbb;
+}
+
+.card__end {
+  font-size: 0.9em;
+  color    : #bbb;
+}
+
+.card__footer {
+  border-top  : 1px solid #e9e8ea;
+  font-size: 0.9em;
+  padding  : 10px 0;
+}
+
+.card__more {
+  color: #3e90ff
+}
+
+.card__btn {
+  border          : none;
+  outline         : none;
+  display         : block;
+  width           : 100%;
+  background-color: #8bc63c;
+  color           : white;
+  padding         : 10px 0;
+  margin          : 10px 0;
+}
+
+@media screen and (min-width : 640px) and (max-width : 1023px) {
+  body {
+    font-size: 1.2em;
+  }
+  main {
+    padding: 20px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card_select {
+    padding: 40px;
+    width  : 60%;
+    margin : 0 auto;
+  }
+}
+
+@media screen and (min-width : 1024px) {
+  body {
+    font-size: 1.3em;
+  }
+  main {
+    padding: 30px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card_select {
+    padding: 50px;
+    width  : 50%;
+    margin : 0 auto;
+  }
+}
