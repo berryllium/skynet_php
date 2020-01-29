@@ -96,7 +96,7 @@ button:active {
   padding        : 10px 0;
 }
 
-.card__param:hover {
+.card__param_link:hover {
   cursor: pointer;
 }
 
